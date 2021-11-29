@@ -1,0 +1,164 @@
+body{
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(39.97deg, #E8AEFF .29%, #A79CFF 40.29%);
+    color: white;
+    width: 100vw ;
+    height: 100vh;
+}
+
+
+.form_container {
+    max-width: 440px;
+    padding: 40px 20px;
+    margin: 70px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5)
+}
+
+.form_container input {
+    margin: 0 0 0 40px;
+    padding: 10px;
+    border-color: seashell;
+    box-shadow: 0 0 10px rgba(5, 5, 52, 0.5)
+}
+
+.form_container p {
+    font-size: 12px;
+    padding: 10px 0 20px;
+    text-align: center;
+}
+
+
+.fields{
+    width: 340px;
+    padding: 14px 5px;
+    text-align: center;
+    border: 1px solid darkslategray;
+}
+
+
+
+.correct {
+    box-shadow: 0 0 16px rgba(18, 125, 12, 1);
+}
+
+.incorrect{
+    box-shadow: 0 0 16px rgba(223, 6, 6, 0.8);
+}
+
+
+
+h2 {
+    margin: 0;
+    font-size: 32px;
+    padding: 20px 0 0 144px;
+}
+
+p{
+    margin: 0;
+    padding: 20px 0 20px 70px;
+}
+
+
+.main_content{
+    max-width: 800px;
+    margin: 60px auto;
+    padding: 40px 0 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.divContainer{
+    margin: 0 0 0 40px;
+}
+
+.label{
+    display: flex;
+    padding: 0 0 12px;
+}
+
+.label input{
+    margin: 3px 10px 0 0;
+}
+
+
+.inputCheck{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    cursor: pointer;
+}
+
+.divRadioContainer{
+    margin: 0 0 0 40px;
+}
+
+
+
+.radioCheck{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.inputItem{
+    margin: 0 0 0 40px;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(142, 84, 183, 0.5);
+    border-color: seashell;
+}
+
+
+.divOptions{
+    margin: 0 0 0 40px;
+    padding: 8px;
+    box-shadow: 0 0 10px rgba(142, 84, 183, 0.5);
+    border-color: seashell;
+}
+
+
+.button{
+    display: flex;
+    align-items: center;
+    padding: 8px 40px;
+    box-shadow: 0 0 10px rgba(142, 84, 183, 0.5);
+    border-radius: 5px;
+    background-color: linen;
+    margin: 50px 0 0 144px;
+    cursor: pointer;
+}
+
+.modal {
+    background: linear-gradient(39.97deg, #E8AEFF .29%, #A79CFF 40.29%);
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100vw ;
+    height: 100vh;
+    overflow: auto; 
+    
+}
+
+
+.modalContainer {
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45%; 
+    box-shadow: 0 0 10px rgba(44, 26, 57, 0.9);
+
+}
+
+
+
+.allResult{
+    margin: 44px 0 0 0;
+    font-size: 32px;
+    padding: 20px 0 20px 144px;
+    color: rgb(39, 13, 91);
+    box-shadow: 0 0 10px rgba(44, 26, 57, 0.9);
+}
+
