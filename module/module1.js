@@ -77,40 +77,45 @@ divForm.appendChild(buttonNext);
 import {div} from "./module2.js"
 
 
-let correctForm = divForm.addEventListener("submit", (event) =>{
+divForm.addEventListener("submit", (event) =>{
     
     event.preventDefault()
 
+    let isValidated = true;
 
     let nameValid = document.forms["formName"]["firstUserName"].value; 
         if(nameValid == "" || nameValid == null) {
             firstNameUser.classList.add("incorrect")
-            
-           
+            isValidated = false
         }else{
             firstNameUser.classList.add("correct")
-           
         }
 
     let surnameValid = document.forms["formName"]["surnameName"].value;
         if(surnameValid == "" || surnameValid == null){
             surnameUser.classList.add("incorrect")
-            
-            
+            isValidated = false
         }else{
             surnameUser.classList.add("correct")
-           
         }
 
     let ageValid = document.forms["formName"]["ageName"].value;
         if(ageValid == "" || ageValid == null){
             ageUser.classList.add("incorrect")
+            isValidated = false
            
         }else{
             ageUser.classList.add("correct")
             
     }
 
+
+    if(isValidated === true){
+        divForm.style.display = "none"
+        div.style.display = "block"
+    }
+
+    
 })
 
 
@@ -123,21 +128,11 @@ window.onload = () => {
     
 }
 
-buttonNext.addEventListener("click",() => {
 
-    if(correctForm) {
-        divForm.style.display = "block"
-        div.style.display = "none"
-        
-    
-    }else{
-        divForm.style.display = "none"
-        div.style.display = "block"
-        
-    }
+buttonNext.addEventListener("click",() => {
 
     localStorage.setItem("first", firstNameUser.value); 
     localStorage.setItem("second", surnameUser.value); 
     localStorage.setItem("third", ageUser.value); 
- 
+
 })
