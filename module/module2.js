@@ -192,10 +192,11 @@ result4.id= "result1"
 button.addEventListener("click" , (event) => {
     event.preventDefault()
 
+
     div.style.display = "none"
     modalWindow.style.display = "block"
 
-
+    
     // *****************************
 
 
@@ -284,12 +285,13 @@ button.addEventListener("click" , (event) => {
     sum = res1 + res2 + res3 + res4
 
 
-
     let allResult = document.getElementById("result")
     allResult.innerHTML = ("Your result is " + sum + " out of 10")
     allResult.classList = "allResult"
     modalContainer.appendChild(allResult)
-
     
-
+  
 })
+
+
+

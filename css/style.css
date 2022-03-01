@@ -122,10 +122,13 @@ p{
     align-items: center;
     padding: 8px 40px;
     box-shadow: 0 0 10px rgba(142, 84, 183, 0.5);
-    border-radius: 5px;
+    border-radius: 7px;
     background-color: linen;
-    margin: 50px 0 0 144px;
+    margin: 50px 0 0 130px;
     cursor: pointer;
+    background: none;
+    color: #000;
+    font-size: 18px;
 }
 
 .modal {
@@ -155,9 +158,23 @@ p{
 
 .allResult{
     margin: 44px 0 0 0;
+    text-align: center;
     font-size: 32px;
-    padding: 20px 0 20px 144px;
+    padding: 20px 0 20px 0;
     color: rgb(39, 13, 91);
     box-shadow: 0 0 10px rgba(44, 26, 57, 0.9);
+}
+
+#my-canvas{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+}
+
+#my-canvas.active{
+    visibility: visible;
 }
 

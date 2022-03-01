@@ -124,8 +124,6 @@ window.onload = () => {
     firstNameUser.value = localStorage.getItem("first");
     surnameUser.value = localStorage.getItem("second")
     ageUser.value = localStorage.getItem("third")
-
-    
 }
 
 
